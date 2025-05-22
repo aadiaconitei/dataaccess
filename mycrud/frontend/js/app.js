@@ -53,6 +53,7 @@ $(document).ready(function ($) {
                 { "data": "prenume" },
                 { "data": "email" },
                 { "data": "telefon" },
+                { "data": "cnp" },
                 {
                     "data": "datanastere",
                     render: $.fn.dataTable.render.moment('YYYY-MM-DDTHH:mm:ss.SSSSZ','YYYY-MM-DD' )
