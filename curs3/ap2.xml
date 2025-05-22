@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<root>
 <exemplu>
     
     <![CDATA[
@@ -10,4 +11,21 @@
             </tr>
         </table>
     ]]>;
+    <salut />
+    
 </exemplu>
+<exemplu>
+    
+    <![CDATA[
+    Un exemplu de creare a unui tabel in HTML:
+    <table align="center">
+            <tr>
+                <td>Coloana 1</td>
+                <td>Coloana 2</td>
+            </tr>
+        </table>
+    ]]>;
+    <salut />
+    
+</exemplu>
+</root>
