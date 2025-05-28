@@ -43,6 +43,7 @@
                 <th>Email</th>
                 <th>Telefon</th>
                 <th>Cnp</th>
+                <th>Poza</th>
                 <th>Data Adaugare</th>
                 <th>Actiuni</th>
               </tr>
@@ -55,6 +56,7 @@
                 <th>Email</th>
                 <th>Telefon</th>
                 <th>Cnp</th>
+                <th>Poza</th>
                 <th>Data Adaugare</th>
                 <th>Actiuni</th>
               </tr>
@@ -159,6 +161,7 @@
                 <label for="cnp" class="col-sm-2 control-label">CNP</label>
                 <div class="col-sm-12">
                   <input
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                     type="number"
                     class="form-control"
                     id="cnp"
@@ -187,6 +190,31 @@
                     value=""
                     maxlength="10"
                     required
+                  />
+                  <div class="invalid-feedback">
+                    Acest camp este obligatoriu!
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="poza" class="col-sm-2 control-label">Poza</label>
+                <div class="col-sm-12">
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="poza"
+                    name="poza"
+                    placeholder="Enter Photo"
+                    value=""
+                    required
+                  />
+                  <img
+                    class="img-thumbnail"
+                    id="myphoto"
+                    src=""
+                    alt=""
+                    style="display: none"
                   />
                   <div class="invalid-feedback">
                     Acest camp este obligatoriu!
